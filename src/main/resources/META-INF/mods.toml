@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+Mixins = ["examplemod.mixins.json"]
+
+[[mods]]
+modId="examplemod"
+version="1.0.0"
+displayName="Passive Mob AI Reforcer"
+authors="Darik"
+description='''
+Mod for reinforcing passive mob AI using Mixins.
+'''
+
+[["dependencies.examplemod"]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[["dependencies.examplemod"]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
